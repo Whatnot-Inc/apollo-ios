@@ -15,7 +15,7 @@ func rootCacheKey<Operation: GraphQLOperation>(for operation: Operation) -> Stri
   }
 }
 
-public protocol ApolloStoreSubscriber: AnyObject {
+protocol ApolloStoreSubscriber: AnyObject {
   
   /// A callback that can be received by subscribers when keys are changed within the database
   ///
@@ -29,26 +29,24 @@ public protocol ApolloStoreSubscriber: AnyObject {
 }
 
 /// The `ApolloStore` class acts as a local cache for normalized GraphQL results.
-public final class ApolloStore {
+public class ApolloStore {
   public var cacheKeyForObject: CacheKeyForObject?
 
   private let queue: DispatchQueue
 
   private let cache: NormalizedCache
 
-  private var subscribers: [ApolloStoreSubscriber]
+  private var subscribers: [ApolloStoreSubscriber] = []
 
   /// Designated initializer
   ///
   /// - Parameter cache: An instance of `normalizedCache` to use to cache results. Defaults to an `InMemoryNormalizedCache`.
-  public init(cache: NormalizedCache = InMemoryNormalizedCache(),
-              subscribers: [ApolloStoreSubscriber] = []) {
+  public init(cache: NormalizedCache = InMemoryNormalizedCache()) {
     self.cache = cache
     queue = DispatchQueue(label: "com.apollographql.ApolloStore", attributes: .concurrent)
-    self.subscribers = subscribers
   }
 
-  fileprivate func didChangeKeys(_ changedKeys: Set<CacheKey>, identifier: UUID?) {
+  func didChangeKeys(_ changedKeys: Set<CacheKey>, identifier: UUID?) {
     for subscriber in self.subscribers {
       subscriber.store(self, didChangeKeys: changedKeys, contextIdentifier: identifier)
     }
