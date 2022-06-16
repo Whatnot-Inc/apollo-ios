@@ -36,14 +36,16 @@ public final class ApolloStore {
 
   private let cache: NormalizedCache
 
-  private var subscribers: [ApolloStoreSubscriber] = []
+  private var subscribers: [ApolloStoreSubscriber]
 
   /// Designated initializer
   ///
   /// - Parameter cache: An instance of `normalizedCache` to use to cache results. Defaults to an `InMemoryNormalizedCache`.
-  public init(cache: NormalizedCache = InMemoryNormalizedCache()) {
+  public init(cache: NormalizedCache = InMemoryNormalizedCache(),
+              subscribers: [ApolloStoreSubscriber] = []) {
     self.cache = cache
     queue = DispatchQueue(label: "com.apollographql.ApolloStore", attributes: .concurrent)
+    self.subscribers = subscribers
   }
 
   fileprivate func didChangeKeys(_ changedKeys: Set<CacheKey>, identifier: UUID?) {
