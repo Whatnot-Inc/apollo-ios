@@ -1,7 +1,7 @@
 import XCTest
-import Apollo
+import LegacyApollo
 import SubscriptionAPI
-import ApolloWebSocket
+import LegacyApolloWebSocket
 import SQLite
 import Nimble
 

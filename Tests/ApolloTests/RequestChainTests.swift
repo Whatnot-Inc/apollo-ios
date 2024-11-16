@@ -7,8 +7,8 @@
 //
 
 import XCTest
-import Apollo
-import ApolloTestSupport
+import LegacyApollo
+import LegacyApolloTestSupport
 import StarWarsAPI
 
 class RequestChainTests: XCTestCase {

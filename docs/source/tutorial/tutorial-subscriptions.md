@@ -68,7 +68,7 @@ In `Network.swift`, you'll need to set up a transport which supports subscriptio
 First, at the top of the file, add an import for the **ApolloWebSocket** framework to get access to the classes you'll need:
 
 ```swift title="Network.swift"
-import ApolloWebSocket
+import LegacyApolloWebSocket
 ```
 
 Next, in the lazy declaration of the `apollo` variable, immediately after `transport` is declared, set up what you need to add subscription support to your client:

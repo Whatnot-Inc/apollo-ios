@@ -1,4 +1,4 @@
-import Apollo
+import LegacyApollo
 import XCTest
 import StarWarsAPI
 

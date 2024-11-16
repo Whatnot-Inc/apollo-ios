@@ -1,6 +1,6 @@
 import XCTest
-import ApolloTestSupport
-import ApolloCodegenTestSupport
+import LegacyApolloTestSupport
+import LegacyApolloCodegenTestSupport
 @testable import ApolloCodegenLib
 
 class CompilationTests: XCTestCase {

@@ -1,6 +1,6 @@
 import Foundation
 import Nimble
-import Apollo
+import LegacyApollo
 @testable import ApolloWebSocket
 
 public func equalMessage(payload: GraphQLMap? = nil, id: String? = nil, type: OperationMessage.Types) -> Predicate<String> {

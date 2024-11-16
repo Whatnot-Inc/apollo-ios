@@ -1,6 +1,6 @@
 import XCTest
 @testable import Apollo
-import ApolloTestSupport
+import LegacyApolloTestSupport
 import StarWarsAPI
 
 class ParseQueryResponseTests: XCTestCase {

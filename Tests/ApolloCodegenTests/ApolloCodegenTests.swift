@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ApolloCodegenTestSupport
+import LegacyApolloCodegenTestSupport
 @testable import ApolloCodegenLib
 
 class ApolloCodegenTests: XCTestCase {

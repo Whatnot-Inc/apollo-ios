@@ -1,5 +1,5 @@
 import Foundation
-import ApolloCodegenLib
+import LegacyApolloCodegenLib
 import ArgumentParser
 
 enum Target {

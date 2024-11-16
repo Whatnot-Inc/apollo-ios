@@ -1,5 +1,5 @@
 @testable import ApolloCodegenLib
-import ApolloCodegenTestSupport
+import LegacyApolloCodegenTestSupport
 import XCTest
 
 class CLIDownloaderTests: XCTestCase {

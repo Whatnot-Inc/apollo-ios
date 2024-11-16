@@ -1,6 +1,6 @@
 import XCTest
-import Apollo
-import ApolloTestSupport
+import LegacyApollo
+import LegacyApolloTestSupport
 import StarWarsAPI
 
 extension GraphQLField {

@@ -1,5 +1,5 @@
 import Foundation
-import ApolloCodegenLib
+import LegacyApolloCodegenLib
 
 // Grab the parent folder of this file on the filesystem
 let parentFolderOfScriptFile = FileFinder.findParentFolder()

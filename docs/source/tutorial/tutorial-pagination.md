@@ -17,7 +17,7 @@ private var lastConnection: LaunchListQuery.Data.Launch?
 Next, you're going to take advantage of a type from the Apollo library. Add the following to the top of the file:
 
 ```swift title="LaunchesViewController.swift"
-import Apollo
+import LegacyApollo
 ```
 
 Then, below `lastConnection`, add a variable to hang on to the most recent request: 

@@ -1,6 +1,6 @@
 import XCTest
 @testable import ApolloSQLite
-import ApolloTestSupport
+import LegacyApolloTestSupport
 import SQLite
 
 class SQLiteDotSwiftDatabaseBehaviorTests: XCTestCase {

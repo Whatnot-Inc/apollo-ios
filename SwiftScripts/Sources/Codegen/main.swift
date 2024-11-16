@@ -1,5 +1,5 @@
 import Foundation
-import ApolloCodegenLib
+import LegacyApolloCodegenLib
 import ArgumentParser
 
 // In a typical app, you'll only need to do this for one target, so you'd

@@ -20,7 +20,7 @@ First, create the new interceptor. Go to **File > New > File...** and create a n
 
 ```swift title="TokenAddingInterceptor.swift"
 import Foundation
-import Apollo
+import LegacyApollo
 
 class TokenAddingInterceptor: ApolloInterceptor {
     func interceptAsync<Operation: GraphQLOperation>(
@@ -61,7 +61,7 @@ Go to **File > New > File...** and create a new **Swift File**. Name it **Networ
 
 ```swift title="NetworkInterceptorProvider.swift"
 import Foundation
-import Apollo
+import LegacyApollo
 
 class NetworkInterceptorProvider: DefaultInterceptorProvider {
     override func interceptors<Operation: GraphQLOperation>(for operation: Operation) -> [ApolloInterceptor] {

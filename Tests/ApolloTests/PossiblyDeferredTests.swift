@@ -1,6 +1,6 @@
 import XCTest
 @testable import Apollo
-import ApolloTestSupport
+import LegacyApolloTestSupport
 
 private struct TestError: Error {}
 private struct OtherTestError: Error {}

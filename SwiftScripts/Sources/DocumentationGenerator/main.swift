@@ -1,6 +1,6 @@
 import Foundation
 import SourceDocsLib
-import ApolloCodegenLib
+import LegacyApolloCodegenLib
 
 enum Target: String, CaseIterable {
     case Apollo

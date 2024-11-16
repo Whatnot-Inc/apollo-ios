@@ -276,7 +276,7 @@ The following example snippets demonstrate how to use an advanced request pipeli
 This example interceptor checks whether the active user is logged in. If so, it asynchronously renews that user's access token if it's expired. Finally, it adds the access token to an `Authorization` header before proceeding to the next interceptor in the request chain.
 
 ```swift
-import Apollo
+import LegacyApollo
 
 class UserManagementInterceptor: ApolloInterceptor {
 
@@ -357,7 +357,7 @@ class UserManagementInterceptor: ApolloInterceptor {
 This example interceptor logs the outgoing request using the hypothetical `Logger` class, then proceeds to the next interceptor in the request chain:
 
 ```swift
-import Apollo
+import LegacyApollo
 
 class RequestLoggingInterceptor: ApolloInterceptor {
 
@@ -382,7 +382,7 @@ This example interceptor uses the hypothetical `Logger` class to log the request
 This is an example of an interceptor that can both proceed _and_ throw an error. We don't necessarily want to stop processing if this interceptor was added in wrong place, but we _do_ want to know about that error.
 
 ```swift
-import Apollo
+import LegacyApollo
 
 class ResponseLoggingInterceptor: ApolloInterceptor {
 
@@ -428,7 +428,7 @@ This `InterceptorProvider` creates request chains using all of the [default inte
 
 ```swift
 import Foundation
-import Apollo
+import LegacyApollo
 
 struct NetworkInterceptorProvider: InterceptorProvider {
 
@@ -468,7 +468,7 @@ Here's what that singleton might look like for an advanced client:
 
 ```swift
 import Foundation
-import Apollo
+import LegacyApollo
 
 class Network {
   static let shared = Network()

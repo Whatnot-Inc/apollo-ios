@@ -1,8 +1,8 @@
 import XCTest
 @testable import ApolloWebSocket
-import ApolloTestSupport
+import LegacyApolloTestSupport
 import Nimble
-import Apollo
+import LegacyApollo
 import SubscriptionAPI
 
 class WSProtocolTestsBase: XCTestCase {

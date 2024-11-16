@@ -1,9 +1,9 @@
 import XCTest
 @testable import Apollo
 #if canImport(ApolloSQLite)
-import ApolloSQLite
+import LegacyApolloSQLite
 #endif
-import ApolloTestSupport
+import LegacyApolloTestSupport
 import StarWarsAPI
 
 class LoadQueryFromStoreTests: XCTestCase, CacheDependentTesting, StoreLoading {

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Apollo GraphQL. All rights reserved.
 //
 
-import Apollo
+import LegacyApollo
 import XCTest
 import StarWarsAPI
 

@@ -33,8 +33,8 @@ Here is an example of setting up a singleton similar to the [Example Advanced Cl
 
 ```swift
 import Foundation
-import Apollo
-import ApolloWebSocket
+import LegacyApollo
+import LegacyApolloWebSocket
 
 // MARK: - Singleton Wrapper
 
@@ -153,8 +153,8 @@ Assuming you (or your backend developers) have read [the authentication section]
 
 ```swift
 import Foundation
-import Apollo
-import ApolloWebSocket
+import LegacyApollo
+import LegacyApolloWebSocket
 
 // MARK: - Singleton Wrapper
 
